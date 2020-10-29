@@ -8,10 +8,16 @@ import Capacitor
 @objc(AppSettings)
 public class AppSettings: CAPPlugin {
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
-        call.success([
-            "value": value
-        ])
+    @objc func openAppSettingsOfOS(_ call: CAPPluginCall) {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+            call.success()
+        } else {
+            call.error("unknown error")
+        }
     }
 }

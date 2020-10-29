@@ -5,5 +5,8 @@ declare module '@capacitor/core' {
 }
 
 export interface AppSettingsPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  /**
+   * 打开App在OS中对应的设置
+   */
+  openAppSettingsOfOS(): Promise<void>;
 }
