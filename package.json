@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-app-settings",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "a open native settings plugin of Capacitor",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",

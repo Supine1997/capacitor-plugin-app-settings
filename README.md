@@ -6,6 +6,7 @@
 
 ```shell script
 npm install git+http://192.168.3.168:12000/tool/capacitor-plugin-app-settings.git
+ionic capacitor sync
 ```
 
 ## 配置
