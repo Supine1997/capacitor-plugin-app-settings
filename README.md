@@ -37,13 +37,7 @@ const AppSettings = Plugins.AppSettings as AppSettingsPlugin;
 AppSettings.openAppSettingsOfOS();
 ```
 
-## 接口
-
-### openAppSettingsOfOS()
-
-```
-openAppSettingsOfOS(): Promise<void>
-```
+## [接口](src/definitions.ts)
 
 ## 提及
 [Flutter App Settings Plugin](https://github.com/spencerccf/app_settings)
