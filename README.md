@@ -30,8 +30,9 @@ public class MainActivity extends BridgeActivity {
 ## 例子
 ```typescript
 import {Plugins} from "@capacitor/core";
+import {AppSettingsPlugin} from "capacitor-plugin-app-settings";
 
-const {AppSettings} = Plugins;
+const AppSettings = Plugins.AppSettings as AppSettingsPlugin;
 
 AppSettings.openAppSettingsOfOS();
 ```
