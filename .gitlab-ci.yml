@@ -7,6 +7,10 @@ stages:
 variables:
   ORIGIN_SSH_URL: "git@192.168.3.168:tool/capacitor-plugin-app-settings.git"
 
+default:
+  tags:
+    - local-cd
+
 cache:
   paths:
     - node_modules
